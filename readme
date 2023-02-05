@@ -1,0 +1,10 @@
+//Update New data
+heroku maintenance:on
+heroku ps webscale:0
+
+git add .
+git commit -m 'update data'
+git push heroku master
+
+heroku ps webscalse:1
+heroku maintenance:off
